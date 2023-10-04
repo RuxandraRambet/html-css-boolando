@@ -1,0 +1,84 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* MAIN */
+.container {
+    width: 1380px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item {
+    width: calc((100% - 40px ) / 3);
+}
+.image1 {
+    display: block;
+}
+.image2 {
+    display:none;
+}
+.image-change:hover .image1 {
+    display: none;
+}
+.image-change:hover .image2 {
+    display: block;
+} 
+.item .item-top {
+    position: relative;
+}
+.item img {
+    width: 100%;
+}
+.item-top .heart {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+ .discount {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+ }
+ .discount .discount-red,
+ .sustain {
+    height: 30px;
+    line-height: 30px;
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+ }
+ .discount .discount-red {
+    background-color: red;
+    margin-right: 5px;
+ }
+ .discount .sustain {
+    background-color: green;
+ }
+
+.item-bottom div:nth-child(even) {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.item-bottom div:first-child,
+.price-crossed {
+    color: grey;
+}
+.price .price-red {
+    color: red
+}
+.price .price-crossed {
+    text-decoration: line-through;
+}
