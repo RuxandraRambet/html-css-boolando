@@ -16,6 +16,11 @@ header {
     background-color: #ff6900;
     margin-bottom: 58px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
 }
 .header-container {
     max-width: 1380px;
@@ -53,12 +58,15 @@ header {
 }
 
 /* MAIN */
+main {
+    margin-top: 100px;
+}
 .container {
     width: 1380px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; 
 }
 .item {
     width: calc((100% - 40px ) / 3);
@@ -120,12 +128,12 @@ header {
     text-transform: uppercase;
     font-weight: 500;
 }
-.item-bottom div:first-child,
+.item-bottom small:first-child,
 .price-crossed {
     color: grey;
 }
 .price .price-red {
-    color: red
+    color: red;
 }
 .price .price-crossed {
     text-decoration: line-through;
